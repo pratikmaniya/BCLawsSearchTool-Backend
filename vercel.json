@@ -9,12 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/app.js"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
+      "dest": "/app.js",
       "headers": [
         {
           "key": "Access-Control-Allow-Credentials",
