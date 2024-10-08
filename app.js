@@ -4,8 +4,12 @@ const routes = require('./routes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-app.use(CORS())
+const corsOptions = {
+  origin: '*',
+  credentials: true,
+  optionSuccessStatus: 200,
+}
+app.use(CORS(corsOptions))
 
 app.use('/', routes);
 
